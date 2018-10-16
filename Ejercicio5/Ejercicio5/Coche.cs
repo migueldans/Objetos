@@ -23,7 +23,6 @@ namespace Ejercicio5
         
         public String GetMarca()
         {
-
             return marca;
         }
         public void SetMarca(String marca)
@@ -33,7 +32,6 @@ namespace Ejercicio5
 
         public String GetModelo()
         {
-
             return modelo;
         }
         public void SetModelo(String modelo)

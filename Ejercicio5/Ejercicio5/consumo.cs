@@ -14,8 +14,7 @@ namespace Ejercicio5
         const double GASOLINA95 = 1.14;
         const double GASOLINA98 = 1.25;
         const double DIESEL = 1.04;
-
-
+        
         public Consumo()
         {
             kms=30;
@@ -59,13 +58,13 @@ namespace Ejercicio5
                     Console.WriteLine("El tipo de combustible no es valido.");
                     Console.ReadLine();
                     return 0;
-                
             }
         }
 
-        public void InfoConsumo()
+        public void InfoConsumo(Coche Coche)
         {
-            Console.WriteLine("Este coche ha recorrido " +kms+" kms, ha consumido " + litros + " litros de " +tipoCombustible+" y su velocidad media es de " + vmed + " km/h");
+            Console.Write("El coche " + Coche.GetMarca()+ " " + Coche.GetModelo() );
+            Console.WriteLine(" ha recorrido " +kms+" kms, ha consumido " + litros + " litros de " +tipoCombustible+" y su velocidad media es de " + vmed + " km/h");
             Console.WriteLine("El tiempo tardado en hacer el recorrido ha sido de " + GetTiempo() + " horas, su consumo medio es de " + ConsumoMedio() + " litros y su consumo es de " + ConsumoEuros() + " euros.");
             Console.ReadLine();
         }

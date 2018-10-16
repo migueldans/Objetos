@@ -20,12 +20,11 @@ namespace Ejercicio5
             miNoCoche.InfoCoche();
 
             Consumo miConsumo = new Consumo();
+            
+            Consumo miOtroConsumo = new Consumo(456, 9, 160, "Gasolina95");
 
-
-            Consumo miOtroConsumo = new Consumo(456, 9, 160, "Gasolina 95");
-
-            miConsumo.InfoConsumo();
-            miOtroConsumo.InfoConsumo();
+            miConsumo.InfoConsumo(miCoche);
+            miOtroConsumo.InfoConsumo(miNoCoche);
 
         }
 
