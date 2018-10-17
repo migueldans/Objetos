@@ -10,7 +10,7 @@ namespace CONTACTO
         static void Main(string[] args)
         {
             Contacto2 personaA = new Contacto2(new DateTime(1990, 3, 6), 94123456, "Miren", "Amigos");
-            Contacto2 personaB = new Contacto2(new DateTime(), 931212123, "Jon", "Trabajo");
+            Contacto2 personaB = new Contacto2(DateTime.Now, 931212123, "Jon", "Trabajo");
             Contacto2 personaC = new Contacto2(new DateTime(1995, 5, 5), 0, "Ane", "Familia");
             Contacto2 personaD = new Contacto2(new DateTime(1992, 2, 12), 944123321, "Julen", "Estudio");
             Contacto2 personaE = new Contacto2(new DateTime(1992, 6, 6), 0, "Jone");

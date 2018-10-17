@@ -16,21 +16,22 @@ namespace CONTACTO
         // CONSTRUCTOR POR DEFECTO
         public Contacto2()
         {
-            contCont++;
+            
             this.fechaNac = fechaNac;
             this.telf = telf;
             this.nombre = nombre;
             this.tipoCon = tipoCon;
-
+            contCont++;
         }
         public Contacto2(DateTime fechaNac, int telf, string nombre)
         {
-            contAm++;
+            
             this.fechaNac = fechaNac;
             this.telf = telf;
             this.nombre = nombre;
             this.tipoCon = "Amigos";
-
+            contCont++;
+            contAm++;
         }
         public Contacto2(DateTime fechaNac, int telf, string nombre, string tipoCon)
         {
@@ -53,6 +54,7 @@ namespace CONTACTO
             this.telf = telf;
             this.nombre = nombre;
             this.tipoCon = tipoCon;
+            contCont++;
 
         }
         //GETTERS Y SETTERS
@@ -148,7 +150,7 @@ namespace CONTACTO
             Console.ReadLine();
         }
         //metodos nuevos
-        public void CambiarTipo(string introTipo)
+        public void CambiarTipo(string introTipo) 
         {
             this.tipoCon = introTipo;
         }
